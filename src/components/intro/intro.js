@@ -9,8 +9,12 @@ export default React.createClass({
   render () {
     return (
       <div id='intro' className={styles.base + ' intro'}>
-        <Heading headingType='invert' text='Unleash your earning potential'/>
-        <Button text='Learn More' buttonType='ghost'/>
+        <div className={styles.headingWrap}>
+          <Heading headingType='invert' text='Unleash your earning potential'/>
+        </div>
+        <div className={styles.buttonWrap}>
+          <Button text='Learn More' buttonType='ghost' onClick={this.props.onButtonClick}/>
+        </div>
       </div>
     );
   }

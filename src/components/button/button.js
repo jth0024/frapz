@@ -6,7 +6,7 @@ export default React.createClass({
 
   render () {
     return (
-      <button className={styles[this.props.buttonType] + ' button ' + this.props.className} onClick={this.props.onClick}>
+      <button onClick={this.props.onClick} className={styles[this.props.buttonType]}>
         <span>{this.props.text.toUpperCase()}</span>
       </button>
     );

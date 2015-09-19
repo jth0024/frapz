@@ -9,7 +9,10 @@ export default React.createClass({
   render () {
     return (<div id='how' className={styles.base + ' how '}>
       <Heading headingType='invert' text='How It Works'/>
-      <Body bodyType='invert' text="It's simple. Activate your ad. Go to a hotspot. Get paid."/>
+      <div className='col-group'>
+        <div className="col-dt-6"><Body bodyType='invert' text="Activate your ad."/></div>
+        <div className="col-dt-6"><Body bodyType='invert' text="Go to a hotspot."/></div>
+      </div>
     </div>);
   }
 });

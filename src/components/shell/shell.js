@@ -12,12 +12,22 @@ export default React.createClass({
     render () {
         return (
           <div className='shell'>
-            <Topbar/>
-            <Intro/>
+            <Topbar onButtonClick={this.scrollToSignUp}/>
+            <Intro onButtonClick={this.scrollToAbout}/>
             <About/>
             <How/>
             <SignUp/>
           </div>
         );
+    },
+
+    scrollToAbout () {
+      const top = document.getElementById('about').offsetTop;
+      window.scrollTo(0, top);
+    },
+
+    scrollToSignUp () {
+      const top = document.getElementById('sign-up').offsetTop;
+      window.scrollTo(0, top);
     }
 });

@@ -8,9 +8,11 @@ export default React.createClass({
   displayName: 'Sign Up',
 
   render () {
-    return (<div id='sign-up' className={styles.base + ' signUp '}>
-      <Heading headingType='invert' text='Sign Up'/>
-      <Form/>
-    </div>);
+    return (
+      <div ref='sign-up' id='sign-up' className={styles.base + ' signUp '}>
+        <Heading headingType='invert' text='Sign Up'/>
+        <Form/>
+      </div>
+    );
   }
 });

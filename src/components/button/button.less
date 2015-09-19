@@ -1,5 +1,15 @@
 @import '~../../global';
 
+.base,
+.ghost {
+  &:focus {
+    outline: none;
+  }
+  &:active {
+    outline: none;
+  }
+}
+
 .base {
   border-style: solid;
   border-color: white;
@@ -17,7 +27,7 @@
 }
 
 .ghost {
-  background-color: inherit;
+  background-color: transparent;
   border-style: solid;
   border-color: white;
   border-width: 1px;

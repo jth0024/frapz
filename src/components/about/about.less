@@ -2,10 +2,13 @@
 
 .base {
   background-color: @blue-grey-darken-4;
-  //background-color: white;
   text-align: center;
   padding: @padding-xl @padding-l;
-  :global(.body) {
+  .bodyWrap {
     margin-top: @margin-m;
+    max-width: @breakpoint;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
   }
 }
