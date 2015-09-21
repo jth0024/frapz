@@ -5,8 +5,52 @@
   background-color: @blue-grey-darken-3;
   //background-color: white;
   text-align: center;
-  padding: @padding-xl @padding-l;
-  :global(.body) {
-    margin-top: @margin-m;
+  padding: @padding-xl 0;
+  .sectionWrap {
+    //background-color: blue;
+    padding: @padding-xl @padding-l;
+  }
+  .blockWrap {
+    display: flex;
+    text-align: left;
+    align-items: flex-start;
+    padding: @padding-l 0;
+    max-width: 500px;
+    margin-left: 0;
+  }
+  .blockWrap.right {
+    margin-left: auto;
+    margin-right: 0;
+  }
+  .bodyWrap {
+    margin-top: @margin-s;
+  }
+  .numberWrap {
+    padding: 0 @padding-s;
+    display: inline-flex;
+    justify-content: center;
+    div {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background-color: transparent;
+      border-style: solid;
+      border-width: 2px;
+      border-color: @teal-lighten-3;
+      color: @teal-lighten-3;
+      padding: @padding-s;
+      width: 35px;
+      height: 35px;
+      border-radius: 10000px;
+    }
+  }
+
+  @media screen and (max-width: @breakpoint) {
+    .blockWrap,
+    .blockWrap.right {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: @breakpoint;
+    }
   }
 }

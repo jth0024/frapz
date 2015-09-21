@@ -2,7 +2,10 @@ var path = require('path');
 
 module.exports = {
     entry: './src/main.js',
-    output: './public/bundle.js',
+    output: {
+      path: './public',
+      filename: 'bundle.js'
+    },
     devServer: {
         contentBase: 'public/'
     },

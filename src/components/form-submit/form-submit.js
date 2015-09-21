@@ -6,7 +6,7 @@ export default React.createClass({
 
   render () {
     return (
-				<div className={styles.base + ' formSubmit'} onClick={this.props.onClick} id="formSubmit">{this.props.text.toUpperCase()}</div>
+				<button className={styles.base + ' formSubmit'} type='submit'>{this.props.text.toUpperCase()}</button>
     );
   }
 });
